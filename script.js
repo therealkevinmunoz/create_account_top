@@ -7,15 +7,6 @@ inputFields.forEach((inputField) => {
   });
 });
 
-/*
-
-function checkValidation(field) {
-  if (field.validity.valueMissing) {
-    errorMessage.textContent = `A value for ${field.name} is missing.`;
-  }
-}
-*/
-
 function checkNameField(field) {
   const fieldMinLength = 0;
   const fieldId = field.id;
