@@ -1,0 +1,111 @@
+:root {
+    --tertiary-font-size: 300;
+    --secondary-font-size: 400;
+    --primary-font-size: 700;
+    --cta-primary-color: #5B934E;
+    --cta-secondary-color: #467933;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.landing-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.background-img-container{
+    background: url("Create\ Account\ TOP\ Landing\ Page.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-container {
+    background-color: #fafafa;
+}
+
+form#sign-up {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    border-radius: 10px;
+    padding: 50px 20px;
+    box-shadow: 0 5px 15px #D3D3D3;
+    margin: 20px;
+    background-color: #fff;
+}
+
+
+#sign-up > div {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: var(--secondary-font-size);
+    color: #3a3b3c;
+}
+
+input {
+    width: 15rem;
+    padding: 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #000;
+}
+
+input:focus {
+    box-shadow: 0 0 5px #D3D3D3;
+}
+
+.error.active {
+    color: #ff0000;
+    margin-top: 5px;
+    width: 15rem;
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid  #ff0000;
+    background-color: rgb(252, 231, 231);
+}
+
+.below-form,
+.above-form {
+    padding: 20px 40px;
+}
+
+.form-action-button {
+    font-weight: var(--primary-font-size);
+    background: none;
+    background-color: var(--cta-secondary-color);
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.25rem;
+}
+
+.form-action-button:hover {
+    cursor: pointer;
+    opacity: 90%;
+}
+
+.log-in-text {
+    text-decoration: none;
+    color: var(--cta-secondary-color);
+}
+
+.logo {
+    width: 35px;
+}
+
+.background-img-container span:only-of-type {
+    font-weight: var(--primary-font-size);
+    font-size: 24px;    
+    position: absolute;
+    bottom: 20px;
+}
+
